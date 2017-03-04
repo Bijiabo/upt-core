@@ -1,0 +1,237 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'iconfont';
+  /* project id 223800 */
+  src: url("//at.alicdn.com/t/font_sce55d0wcloqd7vi.eot");
+  src: url("//at.alicdn.com/t/font_sce55d0wcloqd7vi.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_sce55d0wcloqd7vi.woff") format("woff"), url("//at.alicdn.com/t/font_sce55d0wcloqd7vi.ttf") format("truetype"), url("//at.alicdn.com/t/font_sce55d0wcloqd7vi.svg#iconfont") format("svg"); }
+/* 色板 */
+/* kd info view */
+.kd-info-view {
+  box-sizing: border-box;
+  padding: 16px 16px 20px 16px;
+  background: linear-gradient(to bottom, #FF7B9F, #FFAEC1);
+  color: #ffffff;
+  height: 188px;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  /* fuck uc */
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  box-pack: justify;
+  -webkit-box-align: end;
+  box-align: end; }
+
+.kd-info-view .info-container {
+  flex-grow: 1;
+  -webkit-box-flex: 1; }
+
+.kd-info-view .time-explain {
+  font-size: 10px;
+  font-weight: 200; }
+
+.kd-info-view .time {
+  margin-top: 5px; }
+
+.kd-info-view .time .iconfont {
+  font-size: 40px;
+  letter-spacing: -10px;
+  margin-left: -10px; }
+
+.kd-info-view .status-container {
+  box-sizing: border-box;
+  height: 36px;
+  line-height: 22px;
+  padding: 6px 14px;
+  margin-top: 22px; }
+
+.kd-info-view .link-button {
+  display: inline-block;
+  border: 1px solid #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 22px; }
+
+.kd-info-view .standby-status {
+  padding-left: 0; }
+
+.kd-info-view .product-image {
+  flex-grow: 0;
+  -webkit-box-flex: 0; }
+
+/* kd count down view */
+.kd-count-down-view {
+  box-sizing: border-box;
+  height: 380px;
+  background-image: url("https://img.alicdn.com/imgextra/i4/2780294612/TB2qJAkfORnpuFjSZFCXXX2DXXa_!!2780294612.jpg");
+  background-size: cover;
+  background-position: center bottom; }
+
+.kd-count-down-view.count-down-view.working .circle-view {
+  background: none; }
+
+.kd-count-down-view.count-down-view .circle-view .content-main .iconfont {
+  font-size: 60px;
+  letter-spacing: -20px;
+  margin-left: -20px; }
+
+.kd-count-down-view.count-down-view .content-state {
+  font-weight: 200;
+  font-size: 20px;
+  margin-top: 2px; }
+
+.kd-count-down-view.count-down-view .content-alltime {
+  font-weight: 200;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-top: 4px; }
+
+/* custom grid component style */
+#view .ui-grid ul li.ui-grid-on .iconfont, #view .ui-grid ul li.ui-grid-on div {
+  color: #FF879E !important; }
+
+#view .ui-grid ul li.mask {
+  background-color: rgba(255, 135, 158, 0.2);
+  box-shadow: inset 0 0 0 1px #FF879E; }
+
+/* custom KD Slider component style */
+.kd-mask-slider-view {
+  position: relative; }
+  .kd-mask-slider-view .ui-slider-item {
+    position: relative;
+    padding-top: 87px; }
+  .kd-mask-slider-view .ui-slider-item:before {
+    position: absolute;
+    content: "热喷";
+    top: 14px;
+    left: 10px;
+    background-color: #FFF8F9;
+    text-align: center;
+    width: 73px;
+    height: 100px;
+    z-index: 0;
+    padding-top: 30px;
+    box-sizing: border-box;
+    color: #FF5681; }
+  .kd-mask-slider-view .ui-slider-item:after {
+    position: absolute;
+    content: "冷喷";
+    top: 14px;
+    right: 10px;
+    background-color: #FFF8F9;
+    text-align: center;
+    width: 73px;
+    height: 100px;
+    z-index: 0;
+    padding-top: 30px;
+    box-sizing: border-box;
+    color: #FF5681; }
+  .kd-mask-slider-view .ui-slider-item .ui-slider-bar .ui-slider-handle {
+    background-color: #FF5681; }
+  .kd-mask-slider-view .ui-slider-item .ui-slider-bar .ui-slider-range {
+    background-color: #FF9CAC !important; }
+  .kd-mask-slider-view .ui-slider-item .ui-slider-bar .ui-slider-value {
+    color: #FF9CAC;
+    display: none; }
+  .kd-mask-slider-view .ui-slider-item .ui-slider-cont {
+    padding: 0 80px; }
+  .kd-mask-slider-view .ui-slider-item .ui-slider-cont .ui-slider-min-value {
+    color: #ffffff;
+    margin-left: -15px;
+    width: 30px;
+    text-align: center; }
+  .kd-mask-slider-view .ui-slider-item .ui-slider-cont .ui-slider-min-value:before {
+    position: absolute;
+    content: "";
+    left: 10px;
+    top: 21px;
+    width: 70px;
+    background-color: #FF5681;
+    border-radius: 3px;
+    height: 5px;
+    z-index: 1; }
+  .kd-mask-slider-view .ui-slider-item .ui-slider-cont .ui-slider-min-value:after {
+    position: absolute;
+    content: "";
+    left: 80px;
+    top: 21px;
+    border: 2px solid #FF9CAC;
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    margin-top: -4px;
+    margin-left: -4px;
+    z-index: 2; }
+  .kd-mask-slider-view .ui-slider-item .ui-slider-cont .ui-slider-max-value {
+    color: #ffffff;
+    margin-right: -15px;
+    width: 30px;
+    text-align: center; }
+  .kd-mask-slider-view .ui-slider-item .ui-slider-cont .ui-slider-max-value:before {
+    position: absolute;
+    content: "";
+    right: 10px;
+    top: 21px;
+    width: 70px;
+    background-color: #FF5681;
+    border-radius: 3px;
+    height: 5px;
+    z-index: 1; }
+  .kd-mask-slider-view .ui-slider-item .ui-slider-cont .ui-slider-max-value:after {
+    position: absolute;
+    content: "";
+    right: 80px;
+    top: 21px;
+    border: 2px solid #FF9CAC;
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    margin-top: -4px;
+    margin-right: -4px;
+    z-index: 2; }
+  .kd-mask-slider-view .patch .left-label {
+    position: absolute;
+    top: 170px;
+    left: 65px;
+    color: #343434; }
+  .kd-mask-slider-view .patch .right-label {
+    position: absolute;
+    top: 170px;
+    right: 62px;
+    color: #343434; }
+  .kd-mask-slider-view .patch .left-time-tip {
+    position: absolute;
+    top: 106px;
+    left: 30px;
+    color: #FF5681; }
+  .kd-mask-slider-view .patch .right-time-tip {
+    position: absolute;
+    top: 106px;
+    right: 30px;
+    color: #FF5681; }
+  .kd-mask-slider-view .patch .main-time-tip-des {
+    position: absolute;
+    top: 84px;
+    left: 50%;
+    width: 150px;
+    margin-left: -75px;
+    text-align: center;
+    color: #FF5681; }
+  .kd-mask-slider-view .patch .main-time-tip {
+    position: absolute;
+    top: 106px;
+    left: 50%;
+    width: 150px;
+    margin-left: -75px;
+    text-align: center;
+    color: #FF5681; }
+
+/*# sourceMappingURL=custom.css.map */
