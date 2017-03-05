@@ -10,10 +10,10 @@
 // });
 
 define([
-        './js/public/vue',
-        './js/public/vue-tap',
-        './js/public/aliUI',
-        './js/public/platform',
+        './../public/vue',
+        './../public/vue-tap',
+        './../public/aliUI',
+        './../public/platform',
         './upt-template',
         'http://g.alicdn.com/aic/sdk/user.js','Q' // 获取用户数据
     ], function(Vue, vueTap, aliUI, platform, template, user, Q) {
