@@ -2,12 +2,12 @@
  * Created by huchunbo on 2017/2/16.
  */
 define([
-    './resources/js/command',
-    './resources/js/workStatus',
-    './resources/js/helper',
-    './resources/js/record',
+    './managers/command',
+    './managers/workStatus',
+    './managers/helper',
+    './managers/record',
 ], function() {
     var viewData = [];
-
+    
     return viewData;
 });
